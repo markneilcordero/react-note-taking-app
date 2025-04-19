@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import NoteDeleteModal from "./NoteDeleteModal";
-import { Modal } from 'bootstrap'; // Import Bootstrap's Modal
+import Modal from 'bootstrap/js/dist/modal'; // Corrected import for Bootstrap's Modal JS
 
 const NoteCard = ({ note, onEdit, onDelete }) => {
   const { title, content, tags, createdAt } = note;
