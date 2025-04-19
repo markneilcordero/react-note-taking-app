@@ -33,9 +33,7 @@ const App = () => {
 
   // Delete note
   const handleDeleteNote = (id) => {
-    if (window.confirm("Are you sure you want to delete this note?")) {
-      setNotes((prevNotes) => prevNotes.filter((n) => n.id !== id));
-    }
+    setNotes((prevNotes) => prevNotes.filter((n) => n.id !== id));
   };
 
   // Edit note
